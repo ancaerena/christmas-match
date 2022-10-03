@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 /* general css */
 * {
     padding: 0;
@@ -10,11 +11,20 @@ body {
     display: flex;
   }
 
-  /* First section */
+  /* header */
+  header {
+    display: flex;
+    background-color: #89D997;
+  }
   h1 {
     text-align: center;
     color: #165B33;
-    text-shadow: 1em;
+    text-shadow: 1px;
+  }
+  p {
+    text-align: center;
+    color: #BB2528;
+    text-decoration: solid;
   }
 
   /* general css for game area*/
