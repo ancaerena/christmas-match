@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Mountains+of+Christmas&display=swap');
 /* general css */
 * {
     padding: 0;
@@ -7,24 +7,30 @@
 }
 /* general body css */
 body {
-    height: 100vh;
-    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: Mountains Of Christmas, cursive;
   }
 
   /* header */
   header {
-    display: flex;
-    background-color: #89D997;
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+  }
+  #image {
+    margin-left: 30%;
   }
   h1 {
     text-align: center;
     color: #165B33;
     text-shadow: 1px;
+    font-family: Mountains Of Christmas, cursive;
   }
   p {
     text-align: center;
     color: #BB2528;
-    text-decoration: solid;
+    font-family: Gaegu, cursive;
   }
 
   /* general css for game area*/
@@ -43,13 +49,19 @@ body {
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+
+  .memory-card :active {
+    transform: scale(0.95);
+    transition: transform .3s;
   }
   
   .front-side,
   .back-side {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
     border-radius: 5px;
     background: #BB2528;

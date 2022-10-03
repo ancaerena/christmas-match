@@ -16,17 +16,24 @@
 <body>
     <!--The header of the body, with image and welcoming message-->
     <header>
-        <div>
+        <div id="image">
             <img src="assets/images/h1.png" alt="Santa's Sleigh">
         </div>
     <div>
         <h1 class="heading">Welcome to the Christmas Memory Game</h1>
     </div>
+    <br>
     <!--Instructions on how to play the game-->
     <div>
-      <p>This matching game will put your memory to test. There are 8 images hiden behind Santa cards. <br> Each image has its matching pair hidden on the board. You can turn only two cards at once, if they match, they will stay turned. If not, you can try again, finding each card's match. <br> Let the fun begin by clicking on the first card you want to turn!  </p>
+      <p> <strong>This matching game will put your memory to test. There are 8 images hiden behind Santa cards. <br> Each image has its matching pair hidden on the board. You can turn only two cards at once, if they match, they will stay turned. <br> If not, you can try again, finding each card's match. <br> Let the fun begin by clicking on the first card you want to turn! </strong></p>
     </div>
   </header>
+  <br>
+  <!--The time and number of moves in the game-->
+  <div class="stats">
+    <div class="moves">0 Moves</div>
+    <div class="timer">Time playing: 0 sec</div>
+</div>
 <!--The game layout, images for both sides, each card in one separate div-->
     <section class="christmas-game">
         <div class="memory-card">
