@@ -19,7 +19,7 @@ body {
     width: 100%;
   }
   #image {
-    margin-left: 30%;
+    margin-left: 35%;
     width: 80%;
   }
   h1 {
@@ -46,6 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: #165B33;
+    perspective: 1000px;
   }
 /* Cards*/
   .memory-card {
@@ -55,12 +56,15 @@ body {
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .6s;
   }
 
   .memory-card :active {
     transform: scale(0.95);
     transition: transform .3s;
   }
+  
   
   .front-side,
   .back-side {
@@ -70,4 +74,12 @@ body {
     position: absolute;
     border-radius: 5px;
     background: #BB2528;
+    backface-visibility: hidden;
+  }
+  /* Flipping cards*/
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  .front-side {
+    transform: rotateY(180deg);
   }
