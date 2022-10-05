@@ -33,6 +33,16 @@ body {
     color: #BB2528;
     font-family: Gaegu, cursive;
   }
+  /* start button*/
+  button {
+    text-decoration: #165B33;
+    border-radius: 25%;
+    margin-left: 40%;
+    background-color: #BB2528;
+    border-color: #165B33;
+    border-width: 2px;
+    padding: 3px;
+  }
  /* time and moves area styling*/
   #stats {
     color: #165B33;
