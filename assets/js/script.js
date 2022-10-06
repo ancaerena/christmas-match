@@ -1,3 +1,4 @@
+
 // function to record the number of clicks and to flip the cards
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -69,5 +70,3 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     card.style.order = ramdomPos;
   });
 })();
-
-
