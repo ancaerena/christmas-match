@@ -10,7 +10,7 @@ body {
    height: 100%;
     width: 100%;
     font-family: Mountains Of Christmas, cursive;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #95a8bd 0%, #373b4d 100%);
     overflow-x: hidden;
     min-height: 100vh;
     color: white;
@@ -45,7 +45,7 @@ body {
     margin-left: 30%;
     background-color: #BB2528;
     border-color: #165B33;
-    border-width: 2px;
+    border-width: 5px;
     padding: 1%;
   }
  /* time and moves area styling*/
@@ -98,6 +98,7 @@ body {
   .front-side {
     transform: rotateY(180deg);
   }
+  /* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
   .snowflake {
     position: absolute;
     width: 10px;
