@@ -10,6 +10,33 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+// set intial time
+let seconds = 0, minutes = 0;
+
+// set initial moves and win count
+let moves = 0, winCount = 0;
+
+// for timer
+const timerGenerator = () => {
+  seconds += 1;
+  if(seconds >= 60) {
+    minutes += 0;
+    seconds = 0;
+  }
+  //format time before displaying
+let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+timer.innerHTML = `<span>Time:</span>${minutesValue} : ${secondsValue}`
+};
+
+//calculating moves
+const movesCounter = () => {
+  movesCount += 1;
+  moves.innerHTML = `<span>Moves:</span>${movesCount}`;
+}
+
+
+
 // function to record the number of clicks and to flip the cards
 function flipCard() {
   if (lockBoard) return;
