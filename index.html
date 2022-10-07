@@ -14,24 +14,26 @@
     <link rel="icon" type="image/png" href="assets/images/logosanta32x32.jpg" sizes="32x32">
 </head>
 <body>
-  <!--Snow effect-->
-  <div id="snow"></div>
-  <input type="checkbox" id="toggleSnow" checked="true" onclick="toggleSnow()"> ToggleSnow </input>
+ 
     <!--The header of the body, with image and welcoming message-->
     <header>
+       <!--Snow effect-->
+  <div id="snow"></div>
+  <input type="checkbox" id="toggleSnow" checked="true" onclick="toggleSnow()"> ToggleSnow </input>
         <div id="image">
             <img src="assets/images/h1.png" alt="Santa's Sleigh">
         </div>
     <div>
         <h1>Welcome to the Christmas Memory Game</h1>
     </div>
-    <br>
+  </header>
+  <br>
+  <section>
     <!--Instructions on how to play the game-->
     <div>
       <p> <strong>This matching game will put your memory to test. There are 8 images hiden behind Santa cards. <br> Each image has its matching pair hidden on the board. You can turn only two cards at once, if they match, they will stay turned. <br> If not, you can try again, finding each card's match. <br> Let the fun begin by clicking on the first card you want to turn! </strong></p>
     </div>
-  </header>
-  <br>
+  </section>
   <!--The time and number of moves in the game-->
   <div id="stats">
     <div id="moves"></div>

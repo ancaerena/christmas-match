@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Roboto+Mono&display=swap');
 /* general css */
 * {
     padding: 0;
@@ -23,8 +23,10 @@ body {
     width: 100%;
   }
   #image {
-    margin-left: 35%;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
   h1 {
     text-align: center;
@@ -34,8 +36,10 @@ body {
   }
   p {
     text-align: center;
-    color: #BB2528;
-    font-family: Gaegu, cursive;
+    color: black;
+    font-family: Roboto Mono, cursive;
+    margin: 0 auto;
+    padding: 5%;
   }
   
   /* start button*/
@@ -56,9 +60,9 @@ body {
 
   /* general css for game area*/
   .christmas-game {
-    width: 640px;
+    width: 80%;
     height: 640px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     background: #165B33;

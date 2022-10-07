@@ -14,7 +14,7 @@ let firstCard, secondCard;
 let seconds = 0, minutes = 0;
 
 // set initial moves and win count
-let moves = 0, winCount = 0;
+let movesCount = 0, winCount = 0;
 
 // for timer
 const timerGenerator = () => {
@@ -23,6 +23,7 @@ const timerGenerator = () => {
     minutes += 0;
     seconds = 0;
   }
+  console.log("...loasding...")
   //format time before displaying
 let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
 let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
