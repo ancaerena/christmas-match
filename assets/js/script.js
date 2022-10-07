@@ -1,10 +1,16 @@
 
-// function to record the number of clicks and to flip the cards
+
 const cards = document.querySelectorAll('.memory-card');
+const moves = document.getElementById("moves");
+const timer = document.getElementById("timer");
+const startButton = document.getElementById("start");
+const results = document.getElementById("result");
+const controls = document.querySelector(".controls");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+// function to record the number of clicks and to flip the cards
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -70,3 +76,4 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     card.style.order = ramdomPos;
   });
 })();
+

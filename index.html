@@ -32,12 +32,10 @@
     </div>
   </header>
   <br>
-  <button> <strong>Start</strong> </button>
-  <br>
   <!--The time and number of moves in the game-->
   <div id="stats">
-    <div class="moves"> <strong> 0 moves</strong></div>
-    <div class="timer"> <strong> Time playing: 0 sec</strong></div>
+    <div id="moves"></div>
+    <div id="timer"></div>
 </div>
 <br>
 <!--The game layout, images for both sides, each card in one separate div-->
@@ -123,6 +121,10 @@
           </div>
 
       </section>
+      <div class="controls">
+        <p id="result"></p>
+        <button id="start"> <strong>Start Game</strong> </button>
+      </div>
 <!--Linking JavaScript to html file-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/pureSnow.js"></script>
