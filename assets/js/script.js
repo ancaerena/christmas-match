@@ -5,10 +5,10 @@ const moves = document.getElementById("moves");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let matchCounter=0;
+let matchCounter = 0;
 
-// set initial moves and win count
-let movesCount = 0, winCount = 0;
+// set initial moves
+let movesCount = 0
 
 // for timer
 //Timer
@@ -62,7 +62,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   if(isMatch){
-    matchCounter+=1;
+    matchCounter += 1;
    disableCards();
    stopTimer();
      if(matchCounter==(cards.length/2)){
