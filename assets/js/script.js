@@ -6,7 +6,7 @@ let firstCard, secondCard;
 let matchCounter = 0;
 
 // set initial moves
-let movesCount = 0
+let movesCount = 0;
 
 // for timer
 //Timer
@@ -23,7 +23,7 @@ function startTimer() {
    }, 1000);
 }
 
-startTimer()
+startTimer();
 
 function stopTimer() {
    clearInterval(liveTimer);

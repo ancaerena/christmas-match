@@ -11,7 +11,7 @@
 body {
 	height: 100%;
 	width: 100%;
-	font-family: Mountains Of Christmas, cursive;
+	font-family: "Mountains Of Christmas", cursive;
 	background: radial-gradient(ellipse at bottom, #95a8bd 0%, #373b4d 100%);
 	overflow-x: hidden;
 	min-height: 100vh;
@@ -35,14 +35,13 @@ header {
 h1 {
 	text-align: center;
 	color: #165B33;
-	text-shadow: 1px;
-	font-family: Mountains Of Christmas, cursive;
+	font-family: "Mountains Of Christmas", cursive;
 }
 
 p {
 	text-align: center;
 	color: black;
-	font-family: Roboto Mono, cursive;
+	font-family: "Roboto Mono", cursive;
 	margin: 0 auto;
 	padding: 5%;
 }
