@@ -1,108 +1,102 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Christmas Memory Game</h1>
+<br>
+<br>
+<p>The Christmas Memory Game is a fun activity around Christmas time. Can be played by adults and children as well. The game improves memory and focus while also having fun discovering different images.
+<br>
+As memory is one of the most important asset of a human being, users will gain valuable skills while playing this game. </p>
+<br>
+<img src="assets/images/responsivegame.jpg" alt="multiple screen sizes diplaying the website">
+<br>
+<h2>Features</h2>
+<hr>
+<h3>Existing Features</h3>
+<br>
+<h4>Navigation Bar</h4>
+<br>
+- It is featured on all 4 pages of the website, it is identical on all to allow easy navigation. It includes links to all pages, marking them active when lading on one of them, to keep track of the page the user is on.
+- This will allow the user to navigate through the pages easily, without needing to use the "back" button of a browser.
+<img src="assets/images/nav-bar.jpg" alt="navigation bar for little musketeers page">
+<br>
+<h4>First section</h4>
+-Because the target audience are parents but also children, the first section of the Home page includes the presentation video of the Club.
+- This will allow users to experience the location of the afterschool, as what the space has to offer is the decision-maker factor in many cases.
+<img src="assets/images/first-section.jpg" alt="first section of the Home page for little musketeers website">
+<br>
+<h4>Second section</h4>
+- This highlights a few of the services, the most improtant ones: a generous schedule, to cover most of the working hours of a job, and transportation, with option for collection and dropping of children to and from school. Also, the fact that the club has private transport ensured children can have daily trips to parks or in nature.
+- The section keeps the tone of the site, bubbly and colorful.
+- This section is valuble for the user as they will learn important information from the first page
+<img src="assets/images/second-section.jpg" alt="second section of the Home page for little musketeers website">
+<img src="assets/images/third-section.jpg" alt="third section of the Home page for little musketeers website">
+<br>
+<h4>The Footer</h4>
+- This conains links to both of social media platforms for The Little Musketeers Club. The links open in a new tab to allow easy navigation for the user.
+- The footer is valuble for the user as it encourages them to connect through social media, where all the latest news are being posted
+<img src="assets/images/footer.jpg" alt="the footer of the page with facebook and instagram logos">
+<br>
+<h4>Services</h4>
+- This page displays detailed information of each service provided by the afterschool: from free transportation to food cathering, english classes and arts and crafts activities.
+- This highlights all the features that the club offers, valuble information to help the user make a decision towards the Club's services
+<img src="assets/images/services.jpg" alt="services page for little musketeers website">
+<br>
+<h4>Gallery</h4>
+- This page showcases the activities children can take part. It complements the Services page with visual content, also gives the user a better understanding of the programme the website offers.
+<img src="assets/images/contactgallery.jpg" alt="gallery page for little musketeers website">
+<h4>Contact</h4>
+- It offers information on the location, with the Google Maps feature, contact numbers and email address
+- It includes a form for questions and enquiries, requiring the email and the text box to be filled before submitting.
+<img src="assets/images/contact.jpg" alt="contact page for little musketeers website">
+<br>
+<h3>Features left to implement</h3>
+<br>
+<h4>Registration form</h4>
+- A form where users can register for the programme, with starting date, type of service(before-school or after-school), days of the week, with or without transport. This feature will also give the price at the end, depending on services selected
+<br>
+<h2>Bugs to be fixed</h2>
+- Add a value to action atribute for the form in Contact page. The form should be send to an email address once submitted, which requires javascript
+<h2>Testing</h2>
+<br>
+- I've tested that this website works in different browsers, Chrome, Edge and Safari
+- I've tested and the website works in different devices, being responsive to them: mobile devices, tablets and 8 inch screens
+- I have confirmed that the form works: requires entries in all fields, an email for email field and text in the text area
+<h3>Validator testing</h3>
+<br>
+<h4>HTML</h4>
+<br>
+-No errors were returned when passing through the official W3C validator
+<br>
+<h4>CSS<h4>
+<br>
+-No errors were found when passing through the official (Jigsaw) validator
+<br>
+<h4>Accesibility</h4>
+<br>
+- I confirm that the colors and fonts chosen are easy to read and accesible by running it through lighthouse in devtools
+<img src="assets/images/web-accesibility.jpeg" alt="data regarding web accesibility from devtools">
+<br>
+<h2>Deployment</h2>
+<br>
+- The site was deployed to Github pages, the steps to deployment as follow:
+<br>
+A. In the Github repository, navigate to the Settings tab
+<br>
+B. From there, select Pages from the left side
+<br>
+C. From the source section drop-down menu select Main as a branch and then save
+<br>
+D. Once the main branch was selected, the page provided the link to the completed website
+<br>
+The live link can be found here: [Little Musketeers Club](https://ancaerena.github.io/afterschool_project1/)
+<h2>Credits</h2>
+<br>
+- My mentor Seun Owonikoko for introducing the flex display style and helping with the divs display, also with the responsive
+<h3>Content</h3>
+<br>
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Gallery and footer codes from Love Running project [here](https://github.com/Code-Institute-Org/love-running-2.0)
+<br>
+<h3>Media</h3>
+<br>
+- The video from Home page was created by Iulian Dobosan from Arts and Entertainment
+- The images were provided by the Little Musketeers Club owners
 
-Welcome ancaerena,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!

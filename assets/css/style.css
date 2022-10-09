@@ -128,7 +128,7 @@ button {
 @media screen and (max-width: 950px) {
 	.christmas-game {
 		width: 70%;
-		height: 800px;
+		height: 650px;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
@@ -139,7 +139,7 @@ button {
 @media screen and (max-width: 400px) {
 	.christmas-game {
 		width: 90%;
-		height: 800px;
+		height: 650px;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
