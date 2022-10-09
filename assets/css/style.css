@@ -1,136 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Roboto+Mono&display=swap');
+
 /* general css */
 * {
-    padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
 /* general body css */
 body {
-   height: 100%;
-    width: 100%;
-    font-family: Mountains Of Christmas, cursive;
-    background: radial-gradient(ellipse at bottom, #95a8bd 0%, #373b4d 100%);
-    overflow-x: hidden;
-    min-height: 100vh;
-    color: white;
-  }
+	height: 100%;
+	width: 100%;
+	font-family: Mountains Of Christmas, cursive;
+	background: radial-gradient(ellipse at bottom, #95a8bd 0%, #373b4d 100%);
+	overflow-x: hidden;
+	min-height: 100vh;
+	color: white;
+}
 
-  /* header */
-  header {
-    height: fit-content;
-    margin: auto;
-    width: 100%;
-  }
-  #image {
-    margin: 0 auto;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-  }
-  h1 {
-    text-align: center;
-    color: #165B33;
-    text-shadow: 1px;
-    font-family: Mountains Of Christmas, cursive;
-  }
-  p {
-    text-align: center;
-    color: black;
-    font-family: Roboto Mono, cursive;
-    margin: 0 auto;
-    padding: 5%;
-  }
-   
+/* header */
+header {
+	height: fit-content;
+	margin: auto;
+	width: 100%;
+}
 
- /* time and moves area styling*/
-  #stats {
-    color: black;
-    text-align: center;
-    text-decoration: solid;
-  }
-  button {
-    border-color: #165B33;
-    border-width: 2px;
-    border-radius: 25%;
-    color: #BB2528;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-  }
-  /* general css for game area*/
-  .christmas-game {
-    width: 40%;
-    height: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background: #165B33;
-  }
+#image {
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+
+h1 {
+	text-align: center;
+	color: #165B33;
+	text-shadow: 1px;
+	font-family: Mountains Of Christmas, cursive;
+}
+
+p {
+	text-align: center;
+	color: black;
+	font-family: Roboto Mono, cursive;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+
+/* time and moves area styling*/
+#stats {
+	color: black;
+	text-align: center;
+	text-decoration: solid;
+}
+
+button {
+	border-color: #165B33;
+	border-width: 2px;
+	border-radius: 25%;
+	color: #BB2528;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+
+/* general css for game area*/
+.christmas-game {
+	width: 40%;
+	height: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: #165B33;
+}
+
 /* Cards*/
-  .memory-card {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
-    margin: 5px;
-    position: relative;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .6s;
-  }
+.memory-card {
+	width: calc(25% - 10px);
+	height: calc(25% - 10px);
+	margin: 5px;
+	position: relative;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .6s;
+}
 
-  .memory-card :active {
-    transform: scale(0.95);
-    transition: transform .3s;
-  }
-  
-  
-  .front-side,
-  .back-side {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    position: absolute;
-    border-radius: 5px;
-    background: #BB2528;
-    backface-visibility: hidden;
-  }
-  /* Flipping cards*/
-  .memory-card.flip {
-    transform: rotateY(180deg);
-  }
-  .front-side {
-    transform: rotateY(180deg);
-  }
-  /* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
-  .snowflake {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px white);
+.memory-card :active {
+	transform: scale(0.95);
+	transition: transform .3s;
+}
+
+
+.front-side,
+.back-side {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	position: absolute;
+	border-radius: 5px;
+	background: #BB2528;
+	backface-visibility: hidden;
+}
+
+/* Flipping cards*/
+.memory-card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-side {
+	transform: rotateY(180deg);
+}
+
+/* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
+.snowflake {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: linear-gradient(white, white);
+	/* Workaround for Chromium's selective color inversion */
+	border-radius: 50%;
+	filter: drop-shadow(0 0 10px white);
 }
 
 @media screen and (max-width: 950px) {
-  .christmas-game {
-    width: 70%;
-    height: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background: #165B33;
-  }
+	.christmas-game {
+		width: 70%;
+		height: 800px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		background: #165B33;
+	}
 }
+
 @media screen and (max-width: 400px) {
-  .christmas-game {
-    width: 90%;
-    height: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background: #165B33;
-  }
+	.christmas-game {
+		width: 90%;
+		height: 800px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		background: #165B33;
+	}
 }

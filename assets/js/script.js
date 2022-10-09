@@ -1,5 +1,3 @@
-
-
 const cards = document.querySelectorAll('.memory-card');
 const moves = document.getElementById("moves");
 let hasFlippedCard = false;
@@ -14,86 +12,87 @@ let movesCount = 0
 //Timer
 const timerContainer = document.querySelector(".timer");
 let liveTimer,
-    totalSeconds = 0;
+   totalSeconds = 0;
 
 timerContainer.innerHTML = totalSeconds + ' s';
 
- function startTimer() {
-    liveTimer = setInterval(function() {
-        totalSeconds++;
-        timerContainer.innerHTML = `<strong>Time: </strong>`+ totalSeconds + 's';
-    }, 1000);
+function startTimer() {
+   liveTimer = setInterval(function () {
+      totalSeconds++;
+      timerContainer.innerHTML = `<strong>Time: </strong>` + totalSeconds + 's';
+   }, 1000);
 }
 
 startTimer()
 
 function stopTimer() {
-    clearInterval(liveTimer);
+   clearInterval(liveTimer);
 }
 
 //calculating moves
 const movesCounter = () => {
-  movesCount += 1;
-  moves.innerHTML = `<span><strong>Moves:</strong></span>${movesCount}`;
+   movesCount += 1;
+   moves.innerHTML = `<span><strong>Moves:</strong></span>${movesCount}`;
 }
 
 // function to record the number of clicks and to flip the cards
 function flipCard() {
-  if (lockBoard) return;
-  if (this === firstCard) return;
-    this.classList.add('flip');
+   if (lockBoard) return;
+   if (this === firstCard) return;
+   this.classList.add('flip');
 
    if (!hasFlippedCard) {
-     hasFlippedCard = true;
-     firstCard = this;
-     return;
-  }
+      hasFlippedCard = true;
+      firstCard = this;
+      return;
+   }
 
-  secondCard = this;
+   secondCard = this;
 
-  movesCounter();
+   movesCounter();
 
-  checkForMatch();
+   checkForMatch();
 }
 // *functions to keep cards flipped when a match is found
 // *code source for checkForMatch, disable cards and unflip cards: https://marina-ferreira.github.io/
 
 
 function checkForMatch() {
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-  if(isMatch){
-    matchCounter += 1;
-   disableCards();
-   stopTimer();
-     if(matchCounter==(cards.length/2)){
-      window.alert("Congratulations! You won!")
+   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+   if (isMatch) {
+      matchCounter += 1;
+      disableCards();
+      stopTimer();
+      if (matchCounter == (cards.length / 2)) {
+         window.alert("Congratulations! You won!")
       }
+   } else {
+      unflipCards();
    }
-   else{ unflipCards(); }
 }
 
 function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
+   firstCard.removeEventListener('click', flipCard);
+   secondCard.removeEventListener('click', flipCard);
 
-  resetGame();
+   resetGame();
 }
 
 function unflipCards() {
-  lockBoard = true;
+   lockBoard = true;
 
-  setTimeout(() => {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
-    resetGame();
-  }, 1500);
+   setTimeout(() => {
+      firstCard.classList.remove('flip');
+      secondCard.classList.remove('flip');
+      resetGame();
+   }, 1500);
 
 }
 
 // function to reset the board game
 function resetGame() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
+   [hasFlippedCard, lockBoard] = [false, false];
+   [firstCard, secondCard] = [null, null];
 }
 
 
@@ -102,13 +101,13 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 // function to shuffle the cards
 (function shuffleCards() {
-  cards.forEach(card => {
-    let ramdomPos = Math.floor(Math.random() * 16);
-    card.style.order = ramdomPos;
-  });
+   cards.forEach(card => {
+      let ramdomPos = Math.floor(Math.random() * 16);
+      card.style.order = ramdomPos;
+   });
 })();
 
 // restart game
 function myButton() {
-  location.reload();
+   location.reload();
 }
