@@ -41,32 +41,28 @@ body {
     margin: 0 auto;
     padding: 5%;
   }
+   
   
-  /* start button*/
-  button {
-    text-decoration: #165B33;
-    border-radius: 25%;
-    margin-left: 48%;
-    background-color: #BB2528;
-    border-color: #165B33;
-    border-width: 5px;
-    padding: 1%;
-  }
+
+
  /* time and moves area styling*/
   #stats {
-    color: #165B33;
+    color: black;
     text-align: center;
+    text-decoration: solid;
+  }
+  #stats span {
+    font-weight: 600;
   }
 
   /* general css for game area*/
   .christmas-game {
-    width: 80%;
-    height: 640px;
+    width: 40%;
+    height: 800px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     background: #165B33;
-    perspective: 1000px;
   }
 /* Cards*/
   .memory-card {
@@ -111,4 +107,48 @@ body {
     background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
     border-radius: 50%;
     filter: drop-shadow(0 0 10px white);
+}
+
+ /* start button inside controls*/
+ .controls button {
+  text-decoration: #165B33;
+  border-radius: 25%;
+  margin-left: 48%;
+  background-color: #BB2528;
+  border-color: #165B33;
+  border-width: 5px;
+  padding: 1%;
+}
+.hide {
+  display: none;
+}
+#result {
+  text-align: center;
+
+}
+#result h2 {
+     font-size: medium;
+}
+#result h4 {
+  font-size: small;
+}
+@media screen and (max-width: 950px) {
+  .christmas-game {
+    width: 70%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #165B33;
+  }
+}
+@media screen and (max-width: 400px) {
+  .christmas-game {
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #165B33;
+  }
 }

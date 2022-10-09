@@ -9,6 +9,7 @@ const controls = document.querySelector(".controls");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let interval;
 
 // set intial time
 let seconds = 0, minutes = 0;
@@ -23,7 +24,6 @@ const timerGenerator = () => {
     minutes += 0;
     seconds = 0;
   }
-  console.log("...loasding...")
   //format time before displaying
 let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
 let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
@@ -33,7 +33,7 @@ timer.innerHTML = `<span>Time:</span>${minutesValue} : ${secondsValue}`
 //calculating moves
 const movesCounter = () => {
   movesCount += 1;
-  moves.innerHTML = `<span>Moves:</span>${movesCount}`;
+  moves.innerHTML = `<span><strong>Moves:</strong></span>${movesCount}`;
 }
 
 
@@ -51,6 +51,8 @@ function flipCard() {
   }
 
   secondCard = this;
+
+  movesCounter();
 
   checkForMatch();
 }
@@ -95,8 +97,6 @@ function resetGame() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 
-
-
 // function to shuffle the cards
 (function shuffleCards() {
   cards.forEach(card => {
@@ -105,3 +105,6 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   });
 })();
 
+if (lockBoard) {
+  alert("You won!\nMoves: ${movesCount}");
+}
