@@ -2,12 +2,10 @@
 
 const cards = document.querySelectorAll('.memory-card');
 const moves = document.getElementById("moves");
-const startButton = document.getElementById("start");
-const results = document.getElementById("result");
-const controls = document.querySelector(".controls");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let matchCounter=0;
 
 // set initial moves and win count
 let movesCount = 0, winCount = 0;
@@ -23,7 +21,7 @@ timerContainer.innerHTML = totalSeconds + ' s';
  function startTimer() {
     liveTimer = setInterval(function() {
         totalSeconds++;
-        timerContainer.innerHTML = totalSeconds + 's';
+        timerContainer.innerHTML = `<strong>Time: </strong>`+ totalSeconds + 's';
     }, 1000);
 }
 
@@ -38,8 +36,6 @@ const movesCounter = () => {
   movesCount += 1;
   moves.innerHTML = `<span><strong>Moves:</strong></span>${movesCount}`;
 }
-
-
 
 // function to record the number of clicks and to flip the cards
 function flipCard() {
@@ -64,12 +60,16 @@ function flipCard() {
 
 
 function checkForMatch() {
-  if (firstCard.dataset.framework === secondCard.dataset.framework) {
-    disableCards();
-    return;
-  }
-
-  unflipCards();
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  if(isMatch){
+    matchCounter+=1;
+   disableCards();
+   stopTimer();
+     if(matchCounter==(cards.length/2)){
+      window.alert("Congratulations! You won!")
+      }
+   }
+   else{ unflipCards(); }
 }
 
 function disableCards() {
@@ -107,3 +107,8 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     card.style.order = ramdomPos;
   });
 })();
+
+// restart game
+function myButton() {
+  location.reload();
+}

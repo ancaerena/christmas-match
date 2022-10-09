@@ -49,7 +49,17 @@ body {
     text-align: center;
     text-decoration: solid;
   }
-
+  button {
+    border-color: #165B33;
+    border-width: 2px;
+    border-radius: 25%;
+    color: #BB2528;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
   /* general css for game area*/
   .christmas-game {
     width: 40%;
@@ -104,29 +114,6 @@ body {
     filter: drop-shadow(0 0 10px white);
 }
 
- /* start button inside controls*/
- .controls button {
-  text-decoration: #165B33;
-  border-radius: 25%;
-  margin-left: 48%;
-  background-color: #BB2528;
-  border-color: #165B33;
-  border-width: 5px;
-  padding: 1%;
-}
-.hide {
-  display: none;
-}
-#result {
-  text-align: center;
-
-}
-#result h2 {
-     font-size: medium;
-}
-#result h4 {
-  font-size: small;
-}
 @media screen and (max-width: 950px) {
   .christmas-game {
     width: 70%;
