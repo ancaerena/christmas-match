@@ -2,33 +2,36 @@
 
 const cards = document.querySelectorAll('.memory-card');
 const moves = document.getElementById("moves");
-const timer = document.getElementById("timer");
 const startButton = document.getElementById("start");
 const results = document.getElementById("result");
 const controls = document.querySelector(".controls");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let interval;
-
-// set intial time
-let seconds = 0, minutes = 0;
 
 // set initial moves and win count
 let movesCount = 0, winCount = 0;
 
 // for timer
-const timerGenerator = () => {
-  seconds += 1;
-  if(seconds >= 60) {
-    minutes += 0;
-    seconds = 0;
-  }
-  //format time before displaying
-let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
-let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
-timer.innerHTML = `<span>Time:</span>${minutesValue} : ${secondsValue}`
-};
+//Timer
+const timerContainer = document.querySelector(".timer");
+let liveTimer,
+    totalSeconds = 0;
+
+timerContainer.innerHTML = totalSeconds + ' s';
+
+ function startTimer() {
+    liveTimer = setInterval(function() {
+        totalSeconds++;
+        timerContainer.innerHTML = totalSeconds + 's';
+    }, 1000);
+}
+
+startTimer()
+
+function stopTimer() {
+    clearInterval(liveTimer);
+}
 
 //calculating moves
 const movesCounter = () => {
@@ -104,7 +107,3 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     card.style.order = ramdomPos;
   });
 })();
-
-if (lockBoard) {
-  alert("You won!\nMoves: ${movesCount}");
-}

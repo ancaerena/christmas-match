@@ -42,17 +42,12 @@ body {
     padding: 5%;
   }
    
-  
-
 
  /* time and moves area styling*/
   #stats {
     color: black;
     text-align: center;
     text-decoration: solid;
-  }
-  #stats span {
-    font-weight: 600;
   }
 
   /* general css for game area*/
