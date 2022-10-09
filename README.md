@@ -8,7 +8,11 @@ As memory is one of the most important asset of a human being, users will gain v
 <img src="assets/images/responsivegame.jpg" alt="multiple screen sizes diplaying the website">
 <br>
 <h2>Features</h2>
-<hr>
+<br>
+ - To structure the game's layout, I have used Figma to create the wireframe for the page:
+ <br>
+<img src="assets/images/wireframe1.jpg" alt="A mock-up of the game page">
+<br>
 <h3>Existing Features</h3>
 <br>
 <h4><strong>Header</strong></h4>
