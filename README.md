@@ -135,7 +135,7 @@ C. From the source section drop-down menu select Main as a branch and then save
 <br>
 D. Once the main branch was selected, the page provided the link to the completed website
 <br>
-The live link can be found here: [Christmas Memory Game](https://github.com/ancaerena/christmas-match)
+The live link can be found here: [Christmas Memory Game](https://ancaerena.github.io/christmas-match/)
 <br>
 <br>
 <h2>Credits</h2>

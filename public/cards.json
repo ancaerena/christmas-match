@@ -1,38 +1,38 @@
 [
     {
-        "image": "../assets/images/famfam.jpg",
+        "image": "./assets/images/famfam.jpg",
         "name": "famfam"
     },
     {
-        "image": "../assets/images/family2-1.jpg",
+        "image": "./assets/images/family2-1.jpg",
         "name": "family2-1"
     },
     {
-        "image": "../assets/images/family3-1.jpg",
+        "image": "./assets/images/family3-1.jpg",
         "name": "family3-1"
     },
     {
-        "image": "../assets/images/family3.jpg",
+        "image": "./assets/images/family3.jpg",
         "name": "family3"
     },
     {
-        "image": "../assets/images/kids2-1.jpg",
+        "image": "./assets/images/kids2-1.jpg",
         "name": "kids2-1"
     },
     {
-        "image": "../assets/images/kids2.jpg",
+        "image": "./assets/images/kids2.jpg",
         "name": "kids2"
     },
     {
-        "image": "../assets/images/parents2-1.jpg",
+        "image": "./assets/images/parents2-1.jpg",
         "name": "parents2-1"
     },
     {
-        "image": "../assets/images/parents2.jpg",
+        "image": "./assets/images/parents2.jpg",
         "name": "parents2"
     },
     {
-        "image": "../assets/images/family2.jpg",
+        "image": "./assets/images/family2.jpg",
         "name": "family2"
     }
 ]
