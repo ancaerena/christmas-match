@@ -46,7 +46,22 @@ p {
 	padding: 5%;
 }
 
+/* game container general css */
+.game {
+    display: flex;
+    justify-content: center;
+}
 
+/* game buton styling */
+
+.game button {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #165B33;
+    color: white;
+	display: flex;
+}
 
 /* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
 .snowflake {

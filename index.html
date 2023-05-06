@@ -33,19 +33,12 @@
             <p> <strong>This matching game will put your memory to test. There are 8 images hiden behind Santa cards. <br> Each image has its matching pair hidden on the board. You can turn only two cards at once, if they match, they will stay turned. <br> If not, you can try again, finding each card's match. <br> Let the fun begin by clicking on the first card you want to turn! </strong></p>
          </div>
       </section>
-      <!--The time, moves and the game holder-->
-      <div class="wrapper">
-         <div id="stats">
-           <div id="moves"></div>
-           <div id="timer"></div>
-         </div>
-         <div class="christmas-game"></div>
-         <button id="stop" class="hide">Stop Game</button>
-       </div>
-       <div class="controls-container">
-         <p id="result"></p>
-         <button id="start">Start Game</button>
-       </div>
+      <div class="grid-container">
+      </div>
+      <p>Moves: <span class="score"></span></p>
+      <div class="game">
+          <button onclick="restart()">Restart</button>
+      </div>
       <!--Linking JavaScript to html file-->
       <script src="assets/js/script.js"></script>
       <script src="assets/js/pureSnow.js"></script>
