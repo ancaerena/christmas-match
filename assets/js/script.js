@@ -29,7 +29,7 @@ const timeGenerator = () => {
 
 
 // pull the cards from json file using the Fetch API method
-fetch("/public/cards.json")
+fetch("./public/cards.json")
   .then((res) => res.json())
   .then((data) => {
     cards = [...data, ...data];
