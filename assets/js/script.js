@@ -92,9 +92,21 @@ function unflipCards() {
       }, 1000);
     }
 
-// reset the board when the restart button is pressed
+// reset the board after each match attempt 
+
     function resetBoard() {
       firstCard = null;
       secondCard = null;
       lockBoard = false;
     }
+
+// restart the game from the Restart button
+
+function restart() {
+  resetBoard();
+  shuffleCards();
+  score = 0;
+  document.querySelector(".score").textContent = score;
+  gridContainer.innerHTML = "";
+  generateCards();
+}
