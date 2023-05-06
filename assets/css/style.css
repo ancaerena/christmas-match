@@ -66,6 +66,15 @@ button {
 	padding: 5px;
 }
 
+#stop {
+	font-size: 1.1em;
+	display: block;
+	margin: 1.1em auto 0 auto;
+	background-color: #165B33;
+	color: #ffffff;
+  }
+
+
 /* general css for game area*/
 .christmas-game {
 	width: 40%;
@@ -113,6 +122,20 @@ button {
 .front-side {
 	transform: rotateY(180deg);
 }
+.hide {
+	display: none;
+  }
+
+#result {
+	text-align: center;
+  }
+  #result h2 {
+	font-size: 2.5em;
+  }
+  #result h4 {
+	font-size: 1.8em;
+	margin: 0.6em 0 1em 0;
+  }
 
 /* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
 .snowflake {

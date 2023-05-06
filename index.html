@@ -34,15 +34,27 @@
          </div>
       </section>
       <!--The time and number of moves in the game-->
-      <div id="stats">
+      <div class="wrapper">
+         <div id="stats">
+           <div id="moves"></div>
+           <div id="timer"></div>
+         </div>
+         <div class="christmas-game"></div>
+         <button id="stop" class="hide">Stop Game</button>
+       </div>
+       <div class="controls-container">
+         <p id="result"></p>
+         <button id="start">Start Game</button>
+       </div>
+      <!-- <div id="stats">
          <div id="moves"></div>
          <div class="timer"></div>
-      </div>
-      <br>
-      <button onclick="myButton()"> <strong>Play Again</strong></button>
-      <br>
-      <!--The game layout, images for both sides, each card in one separate div-->
-      <section class="christmas-game">
+      </div> -->
+      <!-- <br> -->
+      <!-- <button onclick="myButton()"> <strong>Play Again</strong></button>
+      <!-- <br> -->
+      <!-- The game layout, images for both sides, each card in one separate div -->
+      <!-- <section class="christmas-game">
          <div class="memory-card" data-framework="family2-1">
             <img class="front-side" src="assets/images/family2-1.jpg" alt="A couple in the winter">
             <img class="back-side" src="assets/images/back.png" alt="Christmas Memory Game">
@@ -107,7 +119,7 @@
             <img class="front-side" src="assets/images/parents2.jpg" alt="Couple for Christmas">
             <img class="back-side" src="assets/images/back.png" alt="Christmas Memory Game">
          </div>
-      </section>
+      </section> --> -->
       <!--Linking JavaScript to html file-->
       <script src="assets/js/script.js"></script>
       <script src="assets/js/pureSnow.js"></script>

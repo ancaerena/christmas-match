@@ -1,9 +1,32 @@
-const cards = document.querySelectorAll('.memory-card');
 const moves = document.getElementById("moves");
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
-let matchCounter = 0;
+const timeValue = document.getElementById("timer");
+const startButton = document.getElementById("start");
+const stopButton = document.getElementById("stop");
+const gameContainer = document.querySelector(".christmas-game");
+const result = document.getElementById("result");
+const controls = document.querySelector(".controls-container");
+let cards;
+let interval;
+let firstCard = false;
+let secondCard = false;
+
+
+//Items array
+const items = [
+   { name: "family2-1", image: "family2-1.jpg" },
+   { name: "family2", image: "family2.jpg" },
+   { name: "family3-1", image: "family3-1.jpg" },
+   { name: "family3", image: "family3.jpg" },
+   { name: "kids2-1", image: "kids2-1.jpg" },
+   { name: "kids2", image: "kids2.jpg" },
+   { name: "parents2-1", image: "parents2-1.jpg" },
+   { name: "parents2", image: "parents2.jpg" },
+ ];
+
+// let hasFlippedCard = false;
+// let lockBoard = false;
+// let firstCard, secondCard;
+// let matchCounter = 0;
 
 // set initial moves
 let movesCount = 0;
