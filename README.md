@@ -57,6 +57,11 @@ It also states  the name of the game, in a font part of the Christmas theme.
 <h4>Result message</h4>
 - A result message with the number of moves and the time spend to finish the game. Time to be displayed in minutes and seconds.
 <br>
+<h3>Fixed bugs</h3>
+- Json file was not working in jaVascript. I moved the file into a public folder and change the source path for it to work.
+<br>
+- 
+<br>
 <h3>Bugs to be fixed</h3>
 - Cards unmatched to turn back on before the next click on the next card.
 <br>
