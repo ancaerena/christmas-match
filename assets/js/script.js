@@ -1,10 +1,32 @@
 const gridContainer = document.querySelector(".grid-container");
+const timeValue = document.getElementById("timer");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
+let interval;
 
 document.querySelector(".score").textContent = score;
+
+//Initial Time
+let seconds = 0,
+  minutes = 0;
+
+//For timer
+const timeGenerator = () => {
+  seconds += 1;
+  //minutes logic
+  if (seconds >= 60) {
+    minutes += 1;
+    seconds = 0;
+  }
+  //format time before displaying
+  let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+  let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+  timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
+};
+
+
 
 // pull the cards from json file using the Fetch API method
 fetch("./public/cards.json")
@@ -65,6 +87,9 @@ function flipCard() {
       score++;
       document.querySelector(".score").textContent = score;
       lockBoard = true;
+      //Start timer
+      interval = setInterval(timeGenerator, 1000);
+
     
       checkForMatch();
     }
@@ -106,6 +131,8 @@ function restart() {
   resetBoard();
   shuffleCards();
   score = 0;
+  seconds = 0,
+  minutes = 0;
   document.querySelector(".score").textContent = score;
   gridContainer.innerHTML = "";
   generateCards();
