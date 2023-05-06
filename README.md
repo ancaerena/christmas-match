@@ -154,7 +154,7 @@ The live link can be found here: [Christmas Memory Game](https://github.com/anca
 <br>
 <h3>Media</h3>
 <br>
-- The header image was created in Canva by me
-- The fliped face of the cards were created in a mobile app called MomentsCam
-- The unfliped face of the cards were sourced from pattern.monster webpage
+- The header image was created in Canva by me <br>
+- The fliped face of the cards were created in a mobile app called MomentsCam <br>
+- The unfliped face of the cards were sourced from pattern.monster webpage <br>
 
