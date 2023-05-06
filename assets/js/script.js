@@ -100,7 +100,7 @@ function checkForMatch() {
       let isMatch = firstCard.dataset.name === secondCard.dataset.name;
     
       isMatch ? disableCards() : unflipCards();
-    }
+}
     
 function disableCards() {
       firstCard.removeEventListener("click", flipCard);
