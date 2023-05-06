@@ -69,3 +69,32 @@ function flipCard() {
       checkForMatch();
     }
 
+// unflip the cards if a match is not found    
+  
+function checkForMatch() {
+      let isMatch = firstCard.dataset.name === secondCard.dataset.name;
+    
+      isMatch ? disableCards() : unflipCards();
+    }
+    
+function disableCards() {
+      firstCard.removeEventListener("click", flipCard);
+      secondCard.removeEventListener("click", flipCard);
+    
+      resetBoard();
+    }
+    
+function unflipCards() {
+      setTimeout(() => {
+        firstCard.classList.remove("flipped");
+        secondCard.classList.remove("flipped");
+        resetBoard();
+      }, 1000);
+    }
+
+// reset the board when the restart button is pressed
+    function resetBoard() {
+      firstCard = null;
+      secondCard = null;
+      lockBoard = false;
+    }
