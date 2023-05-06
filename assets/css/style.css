@@ -117,6 +117,11 @@ p {
 	background-image: url("https://www.canva.com/design/DAFN1un1Joo/fjbg7UZKqrDlm8oVOBOoqg/edit?utm_content=DAFN1un1Joo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton");
 	background-position: center center;
 	background-size: cover;
+	backface-visibility: hidden;
+  }
+  
+.card .front {
+	transform: rotateY(180deg);
   }
 
 /* Snowflake effect - code source https://github.com/hyperstown/puresnowjs/blob/master*/
