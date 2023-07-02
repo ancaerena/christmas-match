@@ -111,10 +111,8 @@ function checkForMatch() {
     
       isMatch ? disableCards() : unflipCards();
 
-      // for(let card of cards)
-      // {
-      //   console.log(card);
-      // }
+
+// loop through all the cards to check for the flipped class
 
       let allFlipped = true;
       for(let i=0; i< gridContainer.childNodes.length-1;i++)
@@ -126,11 +124,13 @@ function checkForMatch() {
           allFlipped = false;
         }
       }
+// when all cards have the flipped class, the game is won      
       if(allFlipped)
       {
         isAllMatched = true;
-        clearInterval(interval);
+        alert("Congratulation! You Won! Press restart to play again!");
       }
+      
 
 }
     
