@@ -12,6 +12,8 @@ document.querySelector(".score").textContent = score;
 let seconds = 0,
   minutes = 0;
 
+let isPlaying = false;
+
 //For timer
 const timeGenerator = () => {
   seconds += 1;
@@ -88,8 +90,10 @@ function flipCard() {
       document.querySelector(".score").textContent = score;
       lockBoard = true;
       //Start timer
-      interval = setInterval(timeGenerator, 1000);
-
+      if(!isPlaying)
+      {
+        interval = setInterval(timeGenerator, 1000);
+      }
     
       checkForMatch();
     }
