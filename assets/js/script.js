@@ -92,6 +92,7 @@ function flipCard() {
       //Start timer
       if(!isPlaying)
       {
+        isPlaying = true;
         interval = setInterval(timeGenerator, 1000);
       }
     
