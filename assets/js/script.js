@@ -13,10 +13,14 @@ let seconds = 0,
   minutes = 0;
 
 let isPlaying = false;
+let isAllMatched = false;
 
 //For timer
 const timeGenerator = () => {
-  seconds += 1;
+  if(!isAllMatched)
+  {
+    seconds += 1;
+  }
   //minutes logic
   if (seconds >= 60) {
     minutes += 1;
@@ -93,9 +97,10 @@ function flipCard() {
       if(!isPlaying)
       {
         isPlaying = true;
-        interval = setInterval(timeGenerator, 1000);
+        this.interval = setInterval(timeGenerator, 1000);
+        console.log("in if")
       }
-    
+      
       checkForMatch();
     }
 
@@ -105,6 +110,28 @@ function checkForMatch() {
       let isMatch = firstCard.dataset.name === secondCard.dataset.name;
     
       isMatch ? disableCards() : unflipCards();
+
+      // for(let card of cards)
+      // {
+      //   console.log(card);
+      // }
+
+      let allFlipped = true;
+      for(let i=0; i< gridContainer.childNodes.length-1;i++)
+      {
+        if(i == 0) {continue;}
+
+        if(gridContainer.children[i].classList.value === "card")
+        {
+          allFlipped = false;
+        }
+      }
+      if(allFlipped)
+      {
+        isAllMatched = true;
+        clearInterval(interval);
+      }
+
 }
     
 function disableCards() {
