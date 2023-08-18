@@ -8,6 +8,8 @@ let interval;
 
 document.querySelector(".score").textContent = score;
 
+// Parts of code and functions taken from https://github.com/code-sketch/memory-game
+
 //Initial Time
 let seconds = 0,
   minutes = 0;
@@ -43,7 +45,7 @@ fetch("./public/cards.json")
     generateCards();
   });
 
-// shuffle the cards
+// shuffle the cards code from https://github.com/code-sketch/memory-game
 
 function shuffleCards() {
    let currentIndex = cards.length,
