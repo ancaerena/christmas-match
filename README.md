@@ -78,7 +78,7 @@ It also states  the name of the game, in a font part of the Christmas theme.
 <br>
 - Cards unmatched to turn back on before the next click on the next card. This was fixed with setTimeout() function.
 <br>
-- Time to stop when all cards are flipped was fixed with 
+- Time to stop when all cards are flipped was fixed with an if statement for to check when all cards are flipped.
 <h3>Bugs to be fixed</h3>
 - 
 <br>
