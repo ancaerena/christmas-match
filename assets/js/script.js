@@ -34,7 +34,7 @@ const timeGenerator = () => {
 
 
 
-// pull the cards from json file using the Fetch API method
+// pull the cards from json file using the Fetch API method code from https://github.com/code-sketch/memory-game
 fetch("./public/cards.json")
   .then((res) => res.json())
   .then((data) => {
